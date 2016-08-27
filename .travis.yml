@@ -6,6 +6,10 @@ services:
 script:
   - wget -O- http://travis.debian.net/script.sh | sh -
 
+env:
+  global:
+    - TERM=dumb
+
 branches:
   except:
     - /^debian\/\d/
